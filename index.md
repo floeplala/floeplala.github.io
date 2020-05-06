@@ -20,7 +20,7 @@ We zijn dol op huisautomatisering, maar van sommige onderdelen willen we gewoon 
 
 ### Raspberry Pi
 
-Vervolgens wil je iets doen met al die MQTT-berichten, want je wil een plek waar die berichten samenkomen en waar alles geregeld wordt: de aasnturing van je verlichting, je verwarming, je beveiliging. En je wil misschien wel een web-interface, of je wil de tijd ophalen van internet, of het weer. Of die commando’s via internet kan ontvangen. Hoe doen we dat? Met nóg een Arduino? Nee, die zijn daar niet krachtig genoeg voor. Hier is een Raspberry Pi juist weer erg geschikt voor: voldoende geheugen en processorkracht om te dienen als hoofdregeling, en voor de communicatie met de buitenwereld, en voor de afhandeling van web-interfaces. Dat is ingrediënt 4.
+Vervolgens wil je iets doen met al die MQTT-berichten, want je wil een plek waar die berichten samenkomen en waar alles geregeld wordt: de aansturing van je verlichting, je verwarming, je beveiliging. En je wil misschien wel een web-interface, of je wil de tijd ophalen van internet, of het weer. Of je wil commando’s via internet kunnen ontvangen. Hoe doen we dat? Met nóg een Arduino? Nee, die zijn daar niet krachtig genoeg voor. Hier is een Raspberry Pi juist weer erg geschikt voor: voldoende geheugen en processorkracht om te dienen als hoofdregeling, en voor de communicatie met de buitenwereld, en voor de afhandeling van web-interfaces. Dat is ingrediënt 4.
 
 ### HomeMatic
 
