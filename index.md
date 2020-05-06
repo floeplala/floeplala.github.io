@@ -1,8 +1,10 @@
-## Home Automation
+# Home Automation
 
-### Inleiding
+## Inleiding
 
 Ik heb lang gesleuteld en nagedacht over mijn eigen home-automation, en de kennis die ik daarbij het opgedaan wil ik hier publiceren, in de hoop dat het anderen helpt met hun automatiseringsprojecten.
+
+## Hardware
 
 ### Mosquitto
 
@@ -23,6 +25,13 @@ Vervolgens wil je iets doen met al die MQTT-berichten, want je wil een plek waar
 ### HomeMatic
 
 Verder kun je nog toevoegen wat je wil. Allerlei apparatuur van diverse leveranciers. De enige eis die we stellen, is dat het MQTT leest en schrijft. Alleen met deze eis valt 99% van de apparatuur af, dus noodgedwongen herformuleren we onze eis: het hoeft niet zelf MQTT te lezen te schrijven, maar er moet een interface bestaan (of te maken zijn) waarmee we vervolgens wel via MQTT met die apparaten kunnen communiceren. Ik heb zelf diverse apparaten van het merk HomeMatic (radiatorkranen, aan/uit-schakelaars, dimmers, draadloze sensoren). Om verbinding te maken met deze apparaten gebruik je een bridge. Bij HomeMatic heet dat de CCU (central control unit). Ik heb de tweede versie van dit apparaat, de HomeMatic CCU2. Op dit apparaat kun je extensies/plug-ins/add-ons installeren. Er is een MQTT-interface voor dit apparaat beschikbaar als add-on. En dit is fantastisch, want hiermee spreken al mijn HomeMatic-apparaten nu ook MQTT. Er is alleen één maar: de add-on is beperkt, want het is een oude versie. Er is wel een nieuwere versie, maar die is te zwaar voor de CCU2. Hij draait wel op de CCU3 (de opvolger van de CCU2). Moet ik dan de CCU2 afschrijven en een CCU3 kopen? Nou dat was een optie, maar er is een omweg: de nieuwe add-on draait behalve op de CCU3 ook als add-on op de Node-RED-omgeving. Maar dan moet ik als extra Node-RED installeren, en ik wilde juist een recht-toe-recht-aan opstelling zonder allerlei tussenliggende lagen. Maar de dreiging om anders de CCU3 te moeten kopen heeft me toch overgehaald Node-RED te installeren op de Raspberry Pi (ingredient 4 dat ik toch al had). En ik moet zeggen: Node-RED ziet er heel goed uit (en is gratis)! Maar zoals gezegd: ik wilde zo min mogelijk met Node-RED te maken hebben dus ik heb een minimale ‘flow’ gemaakt met alleen de paar noodzakelijke componenten om een interface tussen de CCU2 en MQTT te maken. 
+
+## Software
+
+En dan zijn alle hardware-ingredienten compleet: een stabiele zelfstandige regeling voor de kritische regelingen (verwarming), alle componenten beschikbaar via MQTT, een Raspberry Pi als basis voor de hoofdregeling.
+Maar dan? Dan komt het software-deel. Gebruik ik een kant-en-klaar home-automation pakket zoals openHAB of IP-Symcon? Ik heb bij eerdere automatiseringspogingen openHAB gebruikt, en ik liep tegen irritante beperkingen aan op het gebied van integratie met mijn HomeMatic, en het programmeren en debuggen is niet voldoende intuïtief en tijdrovend. Ik wilde gewoon mijn HomeMatic-apparaten kunnen bedienen en niet afhankelijk zijn van wat openHAB nou toevallig wel en niet werkend wil maken.
+
+### HeaderX
 
 # Header 1
 ## Header 2
