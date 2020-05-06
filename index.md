@@ -2,7 +2,7 @@
 
 ## Inleiding
 
-Ik heb lang gesleuteld en nagedacht over mijn eigen home-automation, en de kennis die ik daarbij het opgedaan wil ik hier publiceren, in de hoop dat het anderen helpt met hun automatiseringsprojecten.
+Ik heb lang gesleuteld en nagedacht over mijn eigen home-automation, en de kennis die ik daarbij het opgedaan wil ik hier stapsgewijs publiceren, in de hoop dat dit anderen helpt met hun eigen automatiseringsprojecten.
 
 ## Hardware
 
