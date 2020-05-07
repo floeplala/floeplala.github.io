@@ -1,4 +1,4 @@
-# Home Automation
+# Mijn Slimme Huis
 
 ## Inleiding
 
